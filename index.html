@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><title>FindThePrecious.com</title>
-    <meta name="description" content="Orcs, Goblins, Balrogs-help Sauron find the precious."> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FindThePrecious.com</title>
+    <meta
+      name="description"
+      content="Orcs, Goblins, Balrogs-help Sauron find the precious."
+    />
   </head>
   <body>
     <header>
@@ -11,45 +15,68 @@
         <a href="#" aria-label="Homepage">FindThePrecious.com</a>
         <ul>
           <li><a href="#fellows">Fellows</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main id="content">
+    <main id="content" aria-label="main">
       <section aria-label="Latest alert">
-        <div role="region" aria-roledescription="carousel" aria-label="Important alert" aria-live="polite">
-          <button type="button" aria-label="Next slide">&#10094;</button>
+        <div
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Important alert"
+          aria-live="polite"
+        >
+          <button type="button" aria-label="Previous slide">&#10094;</button>
           <article>
             <h1>Dangerous fellowship try to destroy the ring</h1>
             <p>Orcs, Goblins, Balrogs, protect your master Sauron!</p>
-            <img src="https://via.placeholder.com/140x140" alt="Alert illustration placeholder" width="140" height="140"></article>
-            <button type="button" aria-label="Next Slide">&#10095</button>
+            <img
+              src="https://via.placeholder.com/140x140"
+              alt="Alert illustration placeholder"
+              width="140"
+              height="140"
+            />
+          </article>
+          <button type="button" aria-label="Next Slide">&#10095;</button>
         </div>
       </section>
       <section id="fellows" aria-labelledby="fellows-heading">
         <h2 id="fellows-heading">
-          Fellows wanted dead <small>(or alive if you want to eat them later)</small>
+          Fellows wanted dead
+          <small>(or alive if you want to eat them later)</small>
         </h2>
         <ul aria-label="Wanted cards">
           <li>
             <article>
-            <p><strong>Reward 1000 gold coins</strong></p>
-            <figure>
-              <img src="https://via.placeholder.com/260x200" alt="The Wizard silhouette" width="260" height="200">
-              <figcaption>
-                <h3>The Wizard</h3>
-                <p>Small description...</p>
-              </figcaption>
-            </figure>
+              <p><strong>Reward 1000 gold coins</strong></p>
+              <figure>
+                <img
+                  src="https://via.placeholder.com/260x200"
+                  alt="The Wizard silhouette"
+                  width="260"
+                  height="200"
+                />
+                <figcaption>
+                  <h3>The Wizard</h3>
+                  <p>Small description...</p>
+                </figcaption>
+              </figure>
             </article>
           </li>
           <li>
             <article>
               <p><strong>DEAD</strong></p>
               <figure>
-                <img src="https://via.placeholder.com/260x200" alt="Hobbit #3 silhouette" width="260" height="200">
-                <figcaption> <h3>Hobbit #3</h3>
-                <p>Small description...</p>
+                <img
+                  src="https://via.placeholder.com/260x200"
+                  alt="Hobbit #3 silhouette"
+                  width="260"
+                  height="200"
+                />
+                <figcaption>
+                  <h3>Hobbit #3</h3>
+                  <p>Small description...</p>
                 </figcaption>
               </figure>
             </article>
@@ -58,7 +85,12 @@
             <article>
               <p><strong>Reward 250 gold coins</strong></p>
               <figure>
-                <img src="https://via.placeholder.com/260x200" alt="Yummy Dwarf silhouette" width="260" height="200">
+                <img
+                  src="https://via.placeholder.com/260x200"
+                  alt="Yummy Dwarf silhouette"
+                  width="260"
+                  height="200"
+                />
                 <figcaption>
                   <h3>Yummy Dwarf</h3>
                   <p>Small description...</p>
@@ -70,22 +102,38 @@
       </section>
       <section id="contact" aria-labelledby="contact-heading">
         <h2 id="contact-heading">Contact us</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" novalidate>
+          <!--TODO: REMOVE novalidate BEFORE FINAL VERSION-->
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
 
-          <label for="reason"></label>
+          <label for="reason">Reason</label>
           <select id="reason" name="reason" required>
-            <option value="">I have seen one of them</option>
+            <option value="" disabled selected>
+              Select a reason.../option>
+            </option>
+            <option value="seen">I have seen one of them</option>
             <option value="tip">I have a tip</option>
             <option value="bounty">I want the bounty</option>
             <option value="other">Other</option>
-          </select> 
+          </select>
           <label for="message">Your message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Type your report here..."></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Type your report here..."
+            required
+          ></textarea>
 
-        <button type="sunmit">Send!</button>
-      </form>
+          <button type="submit">Send!</button>
+        </form>
       </section>
     </main>
     <footer aria-label="footer">
