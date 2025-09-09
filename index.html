@@ -6,12 +6,23 @@
     <title>FindThePrecious.com</title>
     <meta
       name="description"
-      content="Orcs, Goblins, Balrogs-help Sauron find the precious."
+      content="Orcs, Goblins, Balrogs—help Sauron find the precious."
     />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cinzel:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- O teu CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav aria-label="Primary">
+      <nav aria-label="Primary" class="container">
         <a href="#" aria-label="Homepage">FindThePrecious.com</a>
         <ul>
           <li><a href="#fellows">Fellows</a></li>
@@ -23,13 +34,16 @@
       <section aria-label="Latest alert">
         <div
           role="region"
+          class="container"
           aria-roledescription="carousel"
           aria-label="Important alert"
           aria-live="polite"
         >
           <button type="button" aria-label="Previous slide">&#10094;</button>
           <article>
-            <h1>Dangerous fellowship try to destroy the ring</h1>
+            <h1 style="font-family: Cinzel, serif">
+              Dangerous fellowship try to destroy the ring
+            </h1>
             <p>Orcs, Goblins, Balrogs, protect your master Sauron!</p>
             <img
               src="https://via.placeholder.com/140x140"
@@ -41,7 +55,7 @@
           <button type="button" aria-label="Next Slide">&#10095;</button>
         </div>
       </section>
-      <section id="fellows" aria-labelledby="fellows-heading">
+      <section id="fellows" aria-labelledby="fellows-heading" class="container">
         <h2 id="fellows-heading">
           Fellows wanted dead
           <small>(or alive if you want to eat them later)</small>
@@ -100,7 +114,7 @@
           </li>
         </ul>
       </section>
-      <section id="contact" aria-labelledby="contact-heading">
+      <section id="contact" aria-labelledby="contact-heading" class="container">
         <h2 id="contact-heading">Contact us</h2>
         <form action="#" method="post" novalidate>
           <!--TODO: REMOVE novalidate BEFORE FINAL VERSION-->
@@ -137,7 +151,7 @@
       </section>
     </main>
     <footer aria-label="footer">
-      <nav aria-label="Footer links">
+      <nav aria-label="Footer links" class="container">
         <ul>
           <li><a href="#">About us</a></li>
           <li><a href="#">Fellows</a></li>
