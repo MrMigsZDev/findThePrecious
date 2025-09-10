@@ -247,3 +247,42 @@ h2 {
 #contact button:hover {
   background: #e6b84f;
 }
+
+/* ===== Footer ===== */
+footer {
+  padding: 32px 20px;
+  background: #10131b;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer nav {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-bottom: 24px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+footer p {
+  text-align: center;
+  margin-top: 16px;
+  color: #666;
+  font-size: 0.8rem;
+}
