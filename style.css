@@ -329,3 +329,32 @@ header nav ul a {
 header nav ul a:hover {
   color: var(--accent);
 }
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  min-height: 400px; /* altura mínima */
+  background: url("images/mordor.jpg.png") no-repeat center/cover;
+  border-bottom: 1px solid var(--border);
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-family: "Cinzel", serif;
+  color: var(--accent);
+  margin-bottom: 16px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8); /* texto legível */
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
