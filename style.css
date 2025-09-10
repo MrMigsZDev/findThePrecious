@@ -286,3 +286,39 @@ footer p {
   color: #666;
   font-size: 0.8rem;
 }
+
+/* ===== Navbar ===== */
+header nav {
+  display: flex;
+  justify-content: space-between; /* logo à esquerda, menu à direita */
+  align-items: center; /* alinha verticalmente */
+  padding: 12px 20px;
+  background: #181d28;
+  border-bottom: 1px solid var(--border);
+}
+
+header nav a[aria-label="Homepage"] {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* espaço entre links */
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+header nav ul a:hover {
+  color: var(--accent);
+}
