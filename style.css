@@ -175,3 +175,75 @@ h2 {
   border-radius: 12px;
   display: block;
 }
+
+/* ===== Contact form ===== */
+#contact {
+  padding: 42px 20px;
+  border-top: 1px solid var(--border);
+  background: #181d28;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+/* Layout do formulário */
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+/* Labels */
+#contact label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Inputs e textarea */
+#contact input,
+#contact select,
+#contact textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #10131b;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Placeholder com cor suave */
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: var(--muted);
+}
+
+/* Foco (quando o campo está selecionado) */
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(214, 163, 84, 0.2);
+}
+
+/* Botão */
+#contact button {
+  background: var(--accent);
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#contact button:hover {
+  background: #e6b84f;
+}
