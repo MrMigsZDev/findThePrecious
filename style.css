@@ -99,3 +99,79 @@ h2 {
     display: none;
   }
 }
+
+/* ===== Fellows (cards grid) ===== */
+#fellows {
+  padding: 42px 0;
+}
+
+#fellows h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+}
+
+#fellows small {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* Lista vira grelha responsiva */
+#fellows ul {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Card */
+#fellows article {
+  background: var(--card, #181d28);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+#fellows article:hover {
+  transform: translateY(-3px);
+}
+
+#fellows figure {
+  margin: 0;
+}
+
+#fellows figcaption h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+#fellows figcaption p {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+}
+
+/* Badges (Reward / DEAD) — funciona com ou sem classes .badge/.badge--dead */
+#fellows p > strong,
+#fellows .badge {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #2a3144, #1a1f2e);
+  color: var(--accent);
+}
+/* Versão DEAD (se usares .badge--dead no HTML) */
+#fellows .badge--dead {
+  background: linear-gradient(180deg, #3b1f27, #231319);
+  color: #ffb3b3;
+  border-color: rgba(255, 0, 0, 0.25);
+}
+
+/* Imagens consistentes */
+#fellows img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
