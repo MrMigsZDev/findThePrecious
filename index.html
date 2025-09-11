@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
 
-    <!-- O teu CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -32,23 +32,22 @@
     </header>
     <main id="content" aria-label="main">
       <section aria-label="Latest alert" class="hero">
-        <div
-          role="region"
-          class="container"
-          aria-roledescription="carousel"
-          aria-label="Important alert"
-          aria-live="polite"
-        >
-          <button type="button" aria-label="Previous slide">&#10094;</button>
-          <article>
-            <h1 style="font-family: Cinzel, serif">
-              Dangerous fellowship try to destroy the ring
-            </h1>
-            <p>Orcs, Goblins, Balrogs, protect your master Sauron!</p>
-          </article>
-          <button type="button" aria-label="Next Slide">&#10095;</button>
-        </div>
+        <!-- Left arrow-->
+        <button type="button" aria-label="Previous slide" class="hero-prev">
+          &#10094;
+        </button>
+        <article>
+          <h1 style="font-family: Cinzel, serif">
+            Dangerous fellowship try to destroy the ring
+          </h1>
+          <p>Orcs, Goblins, Balrogs, protect your master Sauron!</p>
+        </article>
+        <!-- Right arrow -->
+        <button type="button" aria-label="Next Slide" class="hero-next">
+          &#10095;
+        </button>
       </section>
+      </main>
       <section id="fellows" aria-labelledby="fellows-heading" class="container">
         <h2 id="fellows-heading">
           Fellows wanted dead

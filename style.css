@@ -89,6 +89,50 @@ h2 {
   margin: 16px auto 0;
   border-radius: 12px;
 }
+.hero article {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 400px;
+  background: url("images/mordor.jpg.png") center / cover no-repeat;
+  border-bottom: 1px solid var(--border);
+  padding: 40px 20px;
+  color: #fff;
+}
+
+/* Base arrow styles */
+.hero button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Position left and right */
+.hero-prev {
+  left: 400px;
+}
+.hero-next {
+  right: 400px;
+}
 
 /* Mobile: Simplifier layout on small screens */
 @media (max-width: 767px) {
@@ -357,4 +401,55 @@ header nav ul a:hover {
   max-width: 600px;
   margin: 0 auto;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+/* Keep arrows above everything */
+.hero {
+  position: relative;
+}
+.hero article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px; /* pequeno respiro ao texto */
+}
+.hero button {
+  z-index: 2; /* <- garante que não ficam escondidas */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Reserve space lateral para as setas em ecrãs grandes */
+.hero {
+  padding-inline: 72px;
+} /* espaço para os botões nas laterais */
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 380px;
+    padding-inline: 56px; /* um pouco menos de espaço lateral */
+  }
+  .hero button {
+    width: 40px; /* botões um pouco mais pequenos */
+    height: 40px;
+    font-size: 1.6rem;
+    top: 50%;
+  }
+  .hero-prev {
+    left: 8px;
+  } /* mais encostados à borda no mobile */
+  .hero-next {
+    right: 8px;
+  }
 }
