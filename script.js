@@ -23,8 +23,8 @@ const hero = document.querySelector(".hero"); // hero container
 const titleEl = hero?.querySelector("h1"); // hero title (h1)
 const textEl = hero?.querySelector("p"); // hero paragraph
 const buttons = hero?.querySelectorAll("button"); // all buttons inside hero
-const prevBtn = buttons?.[0]; // left arrow button
-const nextBtn = buttons?.[1]; // right arrow button
+const prevBtn = document.querySelector(".hero-prev"); // left arrow button
+const nextBtn = document.querySelector(".hero-next"); // right arrow button
 
 // Render function — updates DOM with slide data
 function renderSlide(index) {
